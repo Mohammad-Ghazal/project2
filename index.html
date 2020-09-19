@@ -1,14 +1,66 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>YouTube</title>
-</head>
-<body>
-    <!-- iframe to embed the video -->
-    <!-- the video id must be changed to a real video id in order to show the video -->
-    <iframe width="1280" height="720" src="https://www.youtube.com/embed/videoID" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</body>
-</html>
+<html lang="en"
+>
 
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>YouTube</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- <script src="https://code.jquery.com/jquery-3.5.1.js"
+     integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" 
+    crossorigin="anonymous" 
+     ></script> -->
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+    ></script>
+
+  </head>
+
+  <body>
+
+   
+
+   <div  >
+      <center> <input id="search" type="text" placeholder="Search.."></center>
+        <!-- iframe to embed the video -->
+    <!-- the video id must be changed to a real video id in order to show the video -->
+    <iframe id = "idd"
+      width="1280"
+      height="720"
+      src="https://www.youtube.com/embed/7yLxxyzGiko"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen
+    ></iframe>
+
+
+
+    <div class="thumbnail_parent"> 
+     
+        <div class="child child1">
+        <img
+        class="thumbnail"
+        src="https://img.youtube.com/vi/rS6cvjFXg9s/maxresdefault.jpg"
+        alt=""
+      />
+    </div>
+        <!-- //videos[0].title</script> -->
+      
+        <div class="child child1">
+          <img
+          class="thumbnail"
+          src="https://img.youtube.com/vi/rS6cvjFXg9s/maxresdefault.jpg"
+          alt=""
+        />
+      </div>
+      
+    </div>
+
+    
+    <script src="data.js"></script>
+    <script src="main.js"></script>
+  </body>
+
+
+
+</html>
