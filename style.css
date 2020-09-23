@@ -6,17 +6,24 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.thumbnail_parent {
+.thumbnail_parent {    
+  padding: 60px;
   display: flex;
   flex-direction: column;
-      border: 5px;
-    border-color: black;
+      
+}
+#iframeDiv{
+display: flex;
+flex-direction: column;
+padding: 50px;
+
 }
 .thumbnail {
     /* $(data.js.videos[0].thumbnail) */
     width: 300px;
     height: 200px;
-    padding: 5px;
+        padding: 50px;
+
     /* background-color: black; */
   }
   
@@ -29,7 +36,7 @@ body {
 
   
 
-  
+/*   
 div.gallery {
   margin: 5px;
   border: 1px solid #ccc;
@@ -48,6 +55,7 @@ div.gallery img {
 
 div.desc {
   padding: 15px;
-  text-align: center;
-}
+  text-align: j;
+  text-size-adjust:auto;
+} */
 

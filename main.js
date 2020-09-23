@@ -1,10 +1,12 @@
 const body = $(`body`);
 
-const image1 = $("#image1");
-const title1 = $("#title1");
-image1.attr("src", videos[0].thumbnail);
-title1.attr("title", "dsdsdsds");
-console.log(title1);
+const image1 = $('#image1');
+const title1 = $('#title1');
+const titleH1=$('#titleH1');
+
+image1.attr('src', videos[0].thumbnail);
+//console.log(title1);
+ titleH1.text(videos[0].title);
 
 
 
@@ -15,6 +17,19 @@ const newElement = document.createElement("h1");
 // you can modify the newly created element's attributes by accessing it and changing the attributes for the values
 newElement.innerText = "Headerddddddddddddddddddddddd One";
 newElement.id = "header_id";
+
+// const iFrameChanger =function(id){
+    const iFrame1=$('#iFrame1');
+    iFrame1.attr('src','https://www.youtube.com/embed/'+videos[3].id);
+//     console.log( iFrame1.link);
+//  iFrame1.src='https://www.youtube.com/embed/'+videos[2].id;
+//     iFrame1.attr('src','https://www.youtube.com/embed/'+videos[2].id);
+//     iFrame1.src='https://www.youtube.com/embed/'+videos[2].id;
+//    console.log( iFrame1.src);
+//}
+
+
+//document.getElementById("iFrame1").src = 'https://www.youtube.com/embed/'+videos[2].id; 
 
 
 
@@ -30,14 +45,12 @@ for(i=0;i<videos.length;i++){
     const image=document.createElement('img');
     const a1=document.createElement('a');
     a1.target= '_blank',a1.href=videos[i].thumbnail;
-    //image.id='image1';
-    image.alt='Cinque Terre';
     image.width='200';
     image.height='125';
-    //image.attr('href','youtube.jpg');
     image.src=videos[i].thumbnail;
 
-    const title_div = document.createElement('div');
+ //image.attr('onClick(),iFrameChanger()');
+     const title_div = document.createElement('div');
     title_div.className ='desc';    
     title_div.id=videos[i].id;
     title_div.innerText=videos[i].title;
@@ -46,10 +59,13 @@ for(i=0;i<videos.length;i++){
     
     new_div.append(a1);
     new_div.append(title_div)
+    
     body.append(new_div);
     thumbnail_parent.append(new_div);
 
 }
+
+
 
 
 // <div class="gallery">
