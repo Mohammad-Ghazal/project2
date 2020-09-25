@@ -1,9 +1,21 @@
 * {
   box-sizing: border-box;
 }
-body {
+#body {
   display: flex;
 }
+#container{
+  display: flex;
+  flex-direction: row;
+
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  
+}
+
 
 .rightSide{
   border: 1px;
@@ -15,7 +27,7 @@ body {
 }
 .thumbnail_parent{
   display: flex;
-  width: 700px;
+  width: 650px;
   height: 220px;
   align-items: center;
 }
@@ -23,7 +35,7 @@ body {
 .thumbnail {
   /* $(data.js.videos[0].thumbnail) */
   align-self: start;
-  width : 370px;
+  width : 380px;
 
   /* background-color: black; */
 }
@@ -37,12 +49,13 @@ body {
 
 
 #searchBox {
- 
-  width: 400px;
+ margin-left: 50px;
+  width: 800px;
   height: 50px;
   border-color: black;
   font-size: 30px;
-}
+align-content: center;
+vertical-align: center;}
 
 .suggestFrame {
   border: 1px solid;
@@ -71,4 +84,14 @@ padding-left: 30px;
 .tapRow{
   padding-right: 100px;
   font-size: 40px;
+}
+
+.header {
+  padding: 10px 16px;
+  background: #555;
+  color: #f1f1f1;
+  margin-bottom: 30px;
+  display: flex;
+  padding-top:40px;
+
 }

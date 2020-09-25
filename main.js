@@ -1,4 +1,5 @@
 const body = $(`body`);
+const container=$('#container');
 const searchBox = $("#searchBox");
 const iframeVidTitle = $("#iframeVidTitle");
 const iFrame1 = $("#iFrame1");
@@ -41,6 +42,24 @@ for (i = 0; i < videos.length; i++) {
   thumbnail_parent.append(imgTitle);
   rightSide.append(thumbnail_parent);
 }
-body.append(rightSide);
+
+container.append(rightSide);
+
 //defult
 $("#" + videos[0].id).hide();
+
+var header = document.getElementById("myHeader");
+var sticky = header.offsetTop;
+    header.classList.add("sticky");
+
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("myHeader");
+var sticky = header.offsetTop;
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
