@@ -4,12 +4,10 @@
 body {
   display: flex;
 }
-#iframeDiv {
-  padding: 20px;
-}
+
 .rightSide{
   border: 1px;
-  padding: 60px;
+  padding: 40px;
   display: flex;
   flex-direction: column;
  
@@ -17,17 +15,15 @@ body {
 }
 .thumbnail_parent{
   display: flex;
-  width: 400px;
-  height: 120px;
+  width: 700px;
+  height: 220px;
   align-items: center;
-  padding-bottom: 130px;
 }
 
 .thumbnail {
   /* $(data.js.videos[0].thumbnail) */
   align-self: start;
-  width : 200px;
-  height :125px;
+  width : 370px;
 
   /* background-color: black; */
 }
@@ -36,6 +32,7 @@ body {
   align-self: start;
   text-decoration-style: wavy;
   font-weight: bold;
+  font-size: 28px;
 }
 
 
@@ -53,23 +50,25 @@ body {
   flex-direction: column;
 }
 
-/*   
-div.gallery {
-  margin: 5px;
-  border: 1px solid #ccc;
+#Ghazal{
+font-size: 120px;
+color: lightcoral;
+border: 6px solid #ccc;
+text-align: center;
 
-  width: 180px;
 }
+#iframeVidTitle{
+  font-size: 50px;
+  padding-left: 30px;
 
-
-
-div.gallery img {
-  width: 100%;
-  height: auto;
 }
-
-div.desc {
-  padding: 15px;
-  text-align: j;
-  text-size-adjust:auto;
-} */
+.Tap{
+display: flex;
+flex-direction: row;
+padding-top: 20px;
+padding-left: 30px;
+}
+.tapRow{
+  padding-right: 100px;
+  font-size: 40px;
+}

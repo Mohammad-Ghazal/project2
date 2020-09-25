@@ -7,10 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>YouTube</title>
     <link rel="stylesheet" href="style.css" />
-    <!-- <script src="https://code.jquery.com/jquery-3.5.1.js"
-     integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" 
-    crossorigin="anonymous" 
-     ></script> -->
      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"
     ></script>
 
@@ -18,13 +14,16 @@
 
   <body>
 
-   
 
-   <div  >
-      <center> <input id="search" type="text" placeholder="Search.."></center>
-        <!-- iframe to embed the video -->
-    <!-- the video id must be changed to a real video id in order to show the video -->
-    <iframe id = "idd"
+     
+    <div id= iframeDiv>  
+      <form action="/action_page.php">
+      <input id="searchBox" placeholder="Search..." tyep="text"   name="search" >
+      
+      </form>
+      <!-- iframe to embed the video -->
+        <!-- the video id must be changed to a real video id in order to show the video -->
+    <iframe id = 'iFrame1'
       width="1280"
       height="720"
       src="https://www.youtube.com/embed/7yLxxyzGiko"
@@ -32,31 +31,58 @@
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
       allowfullscreen
     ></iframe>
-
-
-
-    <div class="thumbnail_parent"> 
-     
-        <div class="child child1">
-        <img
-        class="thumbnail"
-        src="https://img.youtube.com/vi/rS6cvjFXg9s/maxresdefault.jpg"
-        alt=""
-      />
+    <div id = 'iframeVidTitle'  > Kittens walk with a tiny chicken</div>
+    <div class ='Tap'>
+    <div class ='tapRow'>4,812,160 views</div>
+    <div class ='tapRow'>•Apr 27, 2019  </div>
     </div>
-        <!-- //videos[0].title</script> -->
-      
-        <div class="child child1">
-          <img
-          class="thumbnail"
-          src="https://img.youtube.com/vi/rS6cvjFXg9s/maxresdefault.jpg"
-          alt=""
-        />
+    <div>________________________________________________________________________________________________________________________________________________________________</div>
+    <h1 id = "Ghazal" >  Moahmmad Ghazal</h1>
+</div>
+
+<!-- 
+    <div id =rt class="thumbnail_parent"> 
+
+      <div class ="thumbnail_parent">
+      <div class="gallery">
+        <a target="_blank" href="img_5terre.jpg">
+          <img id="image1" alt="Cinque Terre" width="600" height="400">
+        </a>
+        <div id="title1" class="desc">cat1</div>
       </div>
       
-    </div>
+      <div class="gallery">
+        <a target="_blank" href="img_forest.jpg">
+          <img src="https://img.youtube.com/vi/7yLxxyzGiko/maxresdefault.jpg" 
+          alt="Forest" width="600" height="400">
+        </a>
+        <div class="desc">cat2</div>
+      </div>
+      
+      <div class="gallery">
+        <a target="_blank" href="img_lights.jpg">
+          <img src="https://img.youtube.com/vi/7yLxxyzGiko/maxresdefault.jpg"
+           alt="Northern Lights" width="600" height="400">
+        </a>
+        <div  class="desc">cat3</div>
+      </div>
+      
+      <div class="gallery">
+        
+        <a target="_blank" href="videos[0].id">
+          <img  src="https://img.youtube.com/vi/7yLxxyzGiko/maxresdefault.jpg" 
+          alt="Mountains" width="600" height="400">
+        </a>
+        <div class="desc">cat4</div>
+      </div>
 
+    </div>
+     -->
     
+      <body>
+
+      
+      
     <script src="data.js"></script>
     <script src="main.js"></script>
   </body>
